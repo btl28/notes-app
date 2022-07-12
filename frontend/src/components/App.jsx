@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import axios from "axios";
 import { Collapse } from "@mui/material";
 import Header from "./Header";
 import Note from "./Note";
@@ -14,6 +15,8 @@ const App = () => {
             return [...prevNotes, newNote]
         })
     }
+
+    axios.get()
 
     const deleteNote = (id) => {
         setNotes(prevNotes => {
