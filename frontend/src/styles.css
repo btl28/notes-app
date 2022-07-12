@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: grey;
+    color: white;
+    padding: 1% 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-size: 3.5rem;
+}
+
+/* Note */
+.notes-container {
+    margin: 150px;
+    display: flex;
+    column-gap: 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: grey;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    margin: 50px 0;
+}
+
+/* Form */
+.form-container {
+    background-color: grey;
+    padding: 15px 10px 10px 15px;
+}
+
+.form-container button {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+form {
+    width: 30%;
+    margin: auto;
+    position: relative;
+}
+
+.title-input {
+    width: 100%;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 2px 0;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content-input {
+    resize: none;
+    width: 100%;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 0;
+    border: none;
+}
+
+.date-input {
+    width: 50%;
+    height: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 5px 20px 5px 0;
+    border: none;
+    border-bottom-left-radius: 5px;
+}
+
+.clear-btn {
+    border-bottom-right-radius: 5px;
+    height: 35px;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.add-btn {
+    height: 35px;
+    width: 20%;
+    position: absolute;
+    right: 21%;
+    bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Expand Button */
+.expand-btn {
+    background-color: grey;
+    color: white;
+    width: 150px;
+    border-bottom-right-radius: 5px;
+    padding: 5px 20px 5px 50px;
+    margin-bottom: 5%;
+}
