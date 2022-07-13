@@ -1,11 +1,14 @@
 import React from "react";
-import PaletteIcon from '../../node_modules/@mui/icons-material/Palette';
+import PaletteIcon from '@mui/icons-material/Palette';
+import { IconButton } from "@mui/material";
 
 const Header = () => {
     return (
         <div className="header">
             <h1>Jot.</h1>
-            <PaletteIcon sx={{ fontSize: 40 }} />
+            <IconButton className="theme-btn">
+                <PaletteIcon sx={{ fontSize: 40, color: "white" }} />
+            </IconButton>
         </div>
     );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import { IconButton } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const Note = (props) => {
 
@@ -9,10 +11,15 @@ const Note = (props) => {
     return (
         <div className="card">
             <h2>{props.title}</h2>
-            <p>{props.content}</p>
-            <p>{props.date}</p>
-            <button onClick={handleClick}>Delete</button>
-            <button>Edit</button>
+            <hr></hr>
+            <p className="content">{props.content}</p>
+            <p className="date">{props.date}</p>
+
+            <div className="delete-btn-container">
+                <IconButton onClick={handleClick}>
+                    <DeleteIcon />
+                </IconButton>
+            </div>
         </div>
     );
 }

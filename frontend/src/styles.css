@@ -24,23 +24,6 @@ body {
     font-size: 3.5rem;
 }
 
-/* Note */
-.notes-container {
-    margin: 150px;
-    display: flex;
-    column-gap: 5%;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: grey;
-    width: 30%;
-    padding: 10px;
-    border-radius: 5px;
-    word-wrap: break-word;
-    margin: 50px 0;
-}
-
 /* Form */
 .form-container {
     background-color: grey;
@@ -59,14 +42,17 @@ form {
     position: relative;
 }
 
-.title-input {
-    width: 100%;
+.form-input {
     outline: none;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
-    padding: 5px;
-    margin: 2px 0;
     border: none;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title-input {
+    width: 100%;   
+    font-size: 1.5rem;
+    margin: 2px 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -75,9 +61,7 @@ form {
     resize: none;
     width: 100%;
     outline: none;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
-    padding: 5px;
     margin: 0;
     border: none;
 }
@@ -85,32 +69,40 @@ form {
 .date-input {
     width: 50%;
     height: 35px;
-    font-family: 'Ubuntu', sans-serif;
-    outline: none;
     font-size: 1.2rem;
-    padding: 5px;
     margin: 5px 20px 5px 0;
-    border: none;
     border-bottom-left-radius: 5px;
+}
+
+.form-btn {
+    background-color: rgb(105, 105, 105);
+    color: white;
+    bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    height: 35px;
+    width: 10%;
+    position: absolute;
+}
+
+.form-btn:hover {
+    cursor: pointer;
+}
+
+.form-btn:active {
+    background-color: rgb(88, 88, 88);
 }
 
 .clear-btn {
     border-bottom-right-radius: 5px;
-    height: 35px;
-    width: 20%;
-    position: absolute;
     right: 0;
-    bottom: 5px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .add-btn {
-    height: 35px;
-    width: 20%;
-    position: absolute;
-    right: 21%;
-    bottom: 5px;
-    font-family: 'Ubuntu', sans-serif;
+    right: 11%;
+}
+
+.add-btn:hover {
+    cursor: pointer;
 }
 
 /* Expand Button */
@@ -121,4 +113,54 @@ form {
     border-bottom-right-radius: 5px;
     padding: 5px 20px 5px 50px;
     margin-bottom: 5%;
+}
+
+.expand-btn:hover {
+    cursor: pointer;
+}
+
+/* Note */
+.notes-container {
+    margin: 150px;
+    display: flex;
+    column-gap: 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    color: rgb(39, 39, 39);
+    width: 30%;
+    padding: 10px 10px 10px 15px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    margin: 50px 0;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.content {
+    margin: 10px 0 30px 0;
+    font-size: 1.2rem;
+}
+
+.date {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.delete-btn-container {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.card hr {
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+    margin: 0;
 }
