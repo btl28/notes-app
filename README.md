@@ -1,5 +1,13 @@
 # notes-app
-A small notes app I'm making using react and express.js, with mongoDB.
+A basic notes app using react and express.js with mongoDB.
 
-I haven't finished the design for mobile devices or implemented colour themes yet.
+## To do
+-Finish the design for mobile devices.
+
+-Implement colour themes.
+
+## Starting the server
+run `mongod` for the db.
+
+`npm run server` starts the server on port 5000.
 
